@@ -8,6 +8,10 @@ function abreLink(link, bot) {
         let linkAjustado = "";
         if (numBot == 1)
             linkAjustado = "malito:" + link;
+        else if (numBot == 2)
+            linkAjustado = "tel:" + link;
+        else
+            linkAjustado = link;
         window.location.href = linkAjustado;
     }
     catch (e) {
